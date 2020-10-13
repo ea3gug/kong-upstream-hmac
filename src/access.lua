@@ -1,7 +1,7 @@
 local _M = {}
 local hmac_sha1 = ngx.hmac_sha1
 local encode_base64 = ngx.encode_base64
-local openssl_hmac = require "openssl.hmac"
+local openssl_hmac = require "resty.openssl.hmac"
 local kong = kong
 local fmt = string.format
 local sha256 = require "resty.sha256"
